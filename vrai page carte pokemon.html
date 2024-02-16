@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="recherche carte pokemon.css">
+    <script src="api.js"></script>
+</head>
+
+<body>
+
+<input id="recherche" type="text" placeholder="Entrez le nom de la carte Pokémon">
+<button id="boutton" class="boutton1" type="button">Rechercher</button>
+
+<div id="cartesPokemon"></div>
+
+<script>
+    document.querySelector("#boutton").addEventListener("click", async () => {
+        const recherche = document.getElementById("recherche").value.trim();
+        if (recherche === "") {
+            alert("Veuillez entrer un nom de carte Pokémon.");
+            return;
+        }
+
+        try {
+            const reponse = await fetch(`https://api.pokemontcg.io/v2/cards?q=name:${recherche}`);
+            const donnees = await reponse.json();
+            const cartes = donnees.data;
+            
+            if (cartes.length > 0) {
+                const cartesPokemonDiv = document.getElementById("cartesPokemon");
+                cartesPokemonDiv.innerHTML = "";
+                cartes.forEach(carte => {
+                    cartesPokemonDiv.innerHTML += `
+                        <div class="carte">
+                            <img src="${carte.images.small}" alt="${carte.name}">
+                            <p>Nom: ${carte.name}</p>
+                            <p>Type: ${carte.types.join(", ")}</p>
+                        </div>
+                    `;
+                });
+            } else {
+                alert("Aucune carte Pokémon correspondante trouvée.");
+            }
+        } catch (erreur) {
+            console.error('Erreur lors de la récupération des données :', erreur);
+        }
+
+        pokemon.card.where({ q: 'types:fire' }) // Recherche toutes les cartes de type "Fire" (Feu)
+  .then(result => {
+      console.log(result.data[0].name) // Affiche le nom de la première carte correspondante
+  })
+
+    });
+</script>
+
+<footer class="footer">
+    <a class="twitch" href="https://www.twitch.tv/lamatrak">My twitch:🟪</a><br>
+    <a class="spotify" href="https://open.spotify.com/playlist/2yBAOEBML4kMEsRZHcMb6O">My spotify:🟩</a><br>
+    <a class="youtube" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">My youtube:🟥</a><br>
+</footer>
+
+</body>
+</html>

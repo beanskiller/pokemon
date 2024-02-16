@@ -1,0 +1,268 @@
+.fond{
+    background-image: url(TQW5VzG.gif);
+
+}
+
+h1 {
+    color: rgb(255, 255, 255);    
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+      font-size: 5em;
+      text-align: center;
+      font-weight: 800;
+      background-image: url(Carte_de_Hoenn_ROSA.png);
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      background-size: cover;
+      padding: 150px;
+      border-radius: 15px;
+}
+
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    text-align: justify;
+    text-align: center;
+    margin: 50px;
+}
+
+.PK{
+    font-weight: 400;
+    color: #000000;
+}
+
+.img{
+    border-radius: 60% 40% 86% 14% / 83% 36% 64% 17% ;
+    text-align: center;
+    border: 10px #1f4037;
+    box-shadow: 6px 6px 20px #525252;
+}
+
+.Accueil{
+    text-align: left;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: "400";
+  font-style: normal;
+  background-color: #a8a8a800;
+  display: block;
+  width: 95px;
+  height: 45px;
+  border-radius: 15px;
+}
+
+
+img:hover{
+    opacity: 0.8;
+}
+
+a:hover{
+    color: #99f2c8;
+}
+
+.spotify{
+    font-size: 1.5em;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 15px;
+}
+
+.twitch{
+    font-size: 1.5em;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 15px;
+}
+
+.youtube{
+    font-size: 1.5em;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    margin: 15px;
+}
+
+
+.login-container{
+    text-align: center;
+    font-size: large;
+    font-size: 3em;
+    font-family: "Roboto", sans-serif;
+}
+
+.boutton{
+    border-radius: 15px;
+    width: 200px; 
+    height: 60px;
+    padding: 13px 23px;
+    font-size: 18px;
+    margin: 25px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 4px 4px 15px #000000;
+    
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 75%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px #000000;
+}
+
+.classElement{
+    background:linear-gradient(360deg,
+    rgba(62,81,81,1) 19%,
+    rgba(222,203,164,1) 59%);
+    background-size: 300% 300%;
+    animation: gradient-animation 10s ease infinite;}
+
+    @keyframes gradient-animation {
+      0% {background-position: 0% 50%;} 
+      50% {background-position: 100% 50%;} 
+      100% {background-position: 0% 50%;}}
+
+      .page_2{
+        font-family: Arial, sans-serif;
+        font-size: 2em;
+        text-align: start;
+        margin: 50px;
+      }
+
+      .ruby_saphir{
+        border-radius: 15px;
+        text-align: left;
+        border: 10px #1f4037;
+        box-shadow: 6px 6px 20px #525252;
+        display: block;
+        flex: 1;
+        margin: start;
+    }
+
+    .boutton1{
+        border-radius: 15px;
+    width: 200px; 
+    height: 60px;
+    padding: 13px 23px;
+    font-size: 18px;
+    margin: 25px;
+    background-color: rgba(153, 150, 104, 0);
+    box-shadow: 4px 4px 15px #000000;
+    display: block;
+    margin: auto;
+    }
+
+    .barre_de_recherche{
+        width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 4px 4px 15px #000000;
+    -moz-box-align: center;
+
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search{
+        display: flex;
+        text-align: center;
+    }
+
+    .search_carte{
+        text-align: right;
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: "400";
+  font-style: normal;
+  background-color: #a0a0a000;
+  display: flex;
+  width: 210px;
+  height: 45px;
+  border-radius: 15px;
+    }
+
+    .lien_image{
+        display: block;
+        margin: auto;
+        color: #000000;
+    }
+
+
+
+    
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eee;
+    }
+    
+    .checkmark__circle {
+        stroke-dasharray: 166;
+        stroke-dashoffset: 166;
+        stroke-width: 2;
+        stroke-miterlimit: 10;
+        stroke: #7ac142;
+        fill: none;
+        animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+    }
+    
+    .checkmark {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: block;
+        stroke-width: 2;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        margin: 10% auto;
+        box-shadow: inset 0px 0px 0px #7ac142;
+        animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    }
+    
+    .checkmark__check {
+        transform-origin: 50% 50%;
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+    }
+    
+    @keyframes stroke {
+        100% {
+            stroke-dashoffset: 0;
+        }
+    }
+    
+    @keyframes scale {
+        0%, 100% {
+            transform: none;
+        }
+        50% {
+            transform: scale3d(1.1, 1.1, 1);
+        }
+    }
+    
+    @keyframes fill {
+        100% {
+            box-shadow: inset 0px 0px 0px 30px #7ac142;
+        }
+    }
+    
+
